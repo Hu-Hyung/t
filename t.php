@@ -85,23 +85,10 @@ $request_method = $_SERVER['REQUEST_METHOD'];
 // echo $request_method;
 switch($request_method) {
 	case 'GET':
-		//echo "GET plz";
-		select();
-
-		// $collection = $client->test->t1;
-		// $result = $collection->find();
-		// $a = array();
-
-		// foreach ($result as $entry) {
-		// // echo $entry['name'] . "\n";
-		// $temp = array("name" => $entry['name'], "age" => $entry['age']);
-		// //var_dump($temp);
-		// array_push($a, $temp);
-		// }
-		// echo json_encode($a);	
+	    select();	
 	    break;
 	case 'POST':
-		insert($_POST);
+	    insert($_POST);
 	    //$this->request = $this->_cleanInputs($_POST);
 	    break;
 	case 'PUT':
